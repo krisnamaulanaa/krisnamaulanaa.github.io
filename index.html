@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Krisna Maulana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color:whitesmoke;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            background-color: #00FF7F;
+            color: #fff;
+            padding: 40px 0;
+        }
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        header .navigation{
+    position: relative;
+}
+
+header .navigation .navigation-items a{
+    position: relative;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:before{
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:hover:before{
+    width: 100%;
+}
+
+
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+        section {
+            padding: 40px;
+        }
+        h2 {
+            font-size: 24px;
+            color: #368432;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 16px;
+            color: #444;
+        }
+        .project {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+        .project:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .project h3 {
+            font-size: 20px;
+            margin-top: 0;
+            color: #368432;
+        }
+        .project p {
+            margin-bottom: 10px;
+        }
+        .nature-image {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            text-align: center;
+            background-color: #555;
+            color: #fff;
+            padding: 10px 0;
+        }
+        .marquee-container {
+            overflow: hidden;
+            position: relative;
+        }
+        .marquee-content {
+            display: inline-block;
+            white-space: nowrap;
+            animation: marquee 30s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>
+             WELCOME 
+        </h2>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#Explore" >Explore</a>
+             
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        <div id="clock">
+            00:00:00
+          </div>
+          <script>
+            function updateClock() {
+              const now = new Date();
+              const hours = String(now.getHours()).padStart(2, '0');
+              const minutes = String(now.getMinutes()).padStart(2, '0');
+              const seconds = String(now.getSeconds()).padStart(2, '0');
+              
+              const timeString = `${hours}:${minutes}:${seconds}`;
+              
+              document.getElementById('clock').textContent = timeString;
+            }
+            
+            updateClock();
+            setInterval(updateClock, 1000);
+            </script>
+            
+            
+    </header>
+
+ 
+
+    <section id="about">
+        
+        <h2 class="marquee-container">
+            <div class="marquee-content">   Halo, nama saya Krisna Maulana Saputra. Saya adalah seorang siswa dengan minat dalam pembuatan web. Saya senang mengembangkan keterampilan kreatif dan teknis saya dalam proyek-proyek yang menarik.</div>
+
+        </h2>
+        <h3>My Favorit</h3>
+        <p>
+            saya suka melakukan hal-hal yang menyenangkan dan memacu adrenalin diri saya
+        </p>
+    </section>
+    <section id="Explore">
+        <article class="tribute-info" id="tribute-info">
+        <h3 class="headline"> Krisna's journey</h3><!--diisi nama sendiri-->
+            <ul class="list-of-time"><!--diisi riwayat hidup masing2-->
+            <li> <time class="time"> 2007</time> Born in Semarang</li>
+            <li> <time class="time"> 2011</time> joined kindergarten</li>
+            <li> <time class="time"> 2013</time> became primary student</li>
+            <li> <time class="time"> 20019</time> became lower secondary student</li>
+            <li> <time class="time"> 2022</time> became upper secondary student</li>
+         </ul>
+        </article>
+    </section>
+
+    <section id="contact">
+        <h2>Kontak</h2>
+        <p>
+            Email:ksaputra435@gmail.com
+        </p>
+        <p>
+            Telepon:08812725654
+        </p>
+        <div>      
+            <img src="https://tse4.mm.bing.net/th?id=OIP.8SVgggxQcO5L6Dw_61ac4QHaEK&pid=Api&P=0&h=220" height="50px" width="50px" /></a><br>
+            <a class="tribute-link" id="tribute-link" href="https://github.com/krisnamaulanaa/krisnamaulanaa.github.io" target="_blank" >click</a>
+        </div>
+        <div>      
+            <img src="https://img.freepik.com/premium-vector/purple-gradiend-social-media-logo_197792-1883.jpg" height="50px" width="50px" /></a><br>
+            <a class="tribute-link" id="tribute-link" href="https://www.instagram.com/dhzzch/" target="_blank" >click</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="alert alert-dark" role="alert">
+            <center><strong>Krisna Maulana Saputra </strong>SMKN 10 Semarang</center>
+          </div>
+ 
+    </footer>
+</body>
+</html>
